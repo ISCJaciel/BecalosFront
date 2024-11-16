@@ -1,0 +1,130 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('bar_background.jpg') no-repeat center/cover;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h1, h2 {
+    color: #f8c93d; /* Dorado intenso */
+}
+
+p, h4 {
+    color: #eaeaea;
+}
+
+img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.bg-secondary {
+    background-color: #2c2c2c !important;
+}
+
+footer {
+    color: #aaa;
+}
+
+.text-overlay {
+    position: relative;
+    margin-top: -150px; /* Ajusta según sea necesario */
+    background: rgba(255, 255, 255, 0.8); /* Fondo translúcido */
+    color: #000;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-overlay h2 {
+    font-size: 2rem;
+    color: #f8c93d; /* Dorado */
+}
+
+
+.row img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+
+/* Animación al pasar el mouse sobre las imágenes */
+.animate-img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: brightness(80%);
+}
+
+.animate-img:hover {
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+/* Asegurar que las imágenes dentro de cards sean responsivas */
+.card img {
+    height: auto; /* Mantén la proporción de las imágenes */
+    max-width: 100%; /* Restringe el ancho al del contenedor */
+    border-radius: 20px; /* Mantén el diseño elegante */
+}
+
+
+.featured-img {
+    max-width: 70%; /* Tamaño de las imágenes */
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(80%);
+}
+
+/* Estilo específico para la primera imagen */
+.featured-img-1 {
+    transform: translateY(-30px) rotate(-5deg); /* Posición y rotación inicial */
+    z-index: 1; /* Orden de apilamiento */
+}
+
+/* Estilo específico para la segunda imagen */
+.featured-img-2 {
+    transform: translateY(30px) rotate(5deg); /* Posición y rotación inicial */
+    z-index: 1; /* Orden de apilamiento */
+}
+
+/* Efecto al pasar el mouse */
+.featured-img:hover {
+    transform: scale(1.05) rotate(0deg); /* Suaviza la rotación */
+    filter: brightness(100%);
+}
+
+/* Cuadro de texto centrado */
+.text-overlay {
+    background: rgba(0, 0, 0, 0.8); /* Fondo translúcido */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    width: 70%; /* Ajusta el ancho del cuadro */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el cuadro */
+    z-index: 2;
+}
