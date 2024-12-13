@@ -1,125 +1,181 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <meta name="description" content="The Golden Sip: El bar donde cada sorbo es una experiencia única. Disfruta de cócteles exclusivos, vinos premium y un ambiente sofisticado.">
-    <meta name="keywords" content="bar, cócteles, vinos premium, ambiente sofisticado, música en vivo">
-    
-    <title>The Golden Sip</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flexbox</title>
 </head>
-
-<body class="bg-dark text-light">
-    <!-- Header Section -->
-    <header class="container-fluid py-5">
-        <h1 class="display-3 text-uppercase fw-bold">The Golden Sip</h1>
-        <p class="fs-5">El bar donde cada sorbo es una experiencia única</p>
+<body>
+    <header>
+        <div class="header-image-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/6000/6000250.png" alt="logo-image">
+        </div>
+        <form>
+            <input type="text" placeholder="Busca a tu artista favorito.">
+            <button>Buscar</button>
+        </form>
+        <ul>
+            <li>Home</li>
+            <li>Artistas</li>
+            <li>Ayuda</li>
+        </ul>
     </header>
-
-    <!-- Main Content -->
-    <section class="container my-5">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="IMG/wine.jpg" alt="Copa de vino" class="img-fluid rounded">
-            </div>
-            <div class="col-md-6">
-                <h2 class="fw-bold mb-4">Disfruta del Lujo y el Sabor</h2>
-                <p>
-                    Vive una experiencia inolvidable con cocteles exclusivos, vinos premium y un ambiente sofisticado.
-                    Perfecto para quienes buscan momentos especiales rodeados de lujo y calidad.
-                </p>
+    <div class="intrument-container">
+        <div class="big-card">
+            <h1>Los instrumentos de tus artistas favoritos</h1>
+            <div class="big-card-image-container">
+                <img src="https://media.wired.com/photos/657b7c354a7878a7ab900a9e/master/pass/guitar-science-GettyImages-1460054526.jpg" alt="big-card-image">
             </div>
         </div>
-    </section>
-    
-
-<!-- Atmosphere Section -->
-<section class="container-fluid py-5 bg-secondary text-center">
-    <h2 class="text-uppercase fw-bold mb-3">Ambiente único</h2>
-    <p>Sumérgete en la atmósfera envolvente de luces bajas y música que alimenta el alma.</p>
-
-<!-- Carrusel -->
-<div id="ambienceCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-            <div class="card bg-dark text-light border-0">
-                <img src="IMG/cocktail.jpg" class="card-img-top img-fluid" alt="Cocteles">
-                <div class="card-body">
-                    <h4 class="card-title mt-3">Cocteles Exclusivos</h4>
-                    <p class="card-text">Disfruta de sabores únicos y creaciones exclusivas de nuestros expertos bartenders.</p>
+        <div class="small-card">
+            <div class="small-card-icon-container">
+                <img src="https://www.svgrepo.com/show/20201/electric-guitar.svg" alt="small-card-icon">
+            </div>
+            <h2>Investiga sobre tus instrumentos</h2>
+        </div>
+        <div class="small-card">
+            <div class="small-card-icon-container">
+                <img src="https://www.svgrepo.com/show/20201/electric-guitar.svg" alt="small-card-icon">
+            </div>
+            <h2>Investiga sobre tus instrumentos</h2>
+        </div>
+        <div class="small-card">
+            <div class="small-card-icon-container">
+                <img src="https://www.svgrepo.com/show/20201/electric-guitar.svg" alt="small-card-icon">
+            </div>
+            <h2>Investiga sobre tus instrumentos</h2>
+        </div>
+        <div class="small-card">
+            <div class="small-card-icon-container">
+                <img src="https://www.svgrepo.com/show/20201/electric-guitar.svg" alt="small-card-icon">
+            </div>
+            <h2>Investiga sobre tus instrumentos</h2>
+        </div>
+    </div>
+    <div class="genders-container">
+        <h1>Todos los generos que te imagines</h1>
+        <div class="gender-card">
+            <div class="info-gender-card">
+                <h1>Indie Rock</h1>
+                <div class="icon-gender-container">
+                    <img src="https://www.mashedinplastic.co.uk/wp-content/uploads/2022/05/cropped-Music-Audio-Wave-icon-1.png" alt="gender-icon">
                 </div>
             </div>
-        </div>
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-            <div class="card bg-dark text-light border-0">
-                <img src="IMG/live_music.jpg" class="card-img-top img-fluid" alt="Música en vivo">
-                <div class="card-body">
-                    <h4 class="card-title mt-3">Música en Vivo</h4>
-                    <p class="card-text">Déjate envolver por una selección musical que eleva los sentidos.</p>
-                </div>
+            <div class="image-gender-container">
+                <img src="https://es.rollingstone.com/wp-content/uploads/2022/03/2-TheStrokes-Nacho-Arnedo-190322.jpg" alt="gender-image">
             </div>
         </div>
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-            <div class="card bg-dark text-light border-0">
-                <img src="IMG/luxury.jpg" class="card-img-top img-fluid" alt="Ambiente sofisticado">
-                <div class="card-body">
-                    <h4 class="card-title mt-3">Ambiente Sofisticado</h4>
-                    <p class="card-text">Un espacio diseñado para quienes buscan el máximo lujo y confort.</p>
+        <div class="gender-card">
+            <div class="info-gender-card">
+                <h1>Indie Rock</h1>
+                <div class="icon-gender-container">
+                    <img src="https://www.mashedinplastic.co.uk/wp-content/uploads/2022/05/cropped-Music-Audio-Wave-icon-1.png" alt="gender-icon">
                 </div>
+            </div>
+            <div class="image-gender-container">
+                <img src="https://es.rollingstone.com/wp-content/uploads/2022/03/2-TheStrokes-Nacho-Arnedo-190322.jpg" alt="gender-image">
+            </div>
+        </div>
+        <div class="gender-card">
+            <div class="info-gender-card">
+                <h1>Indie Rock</h1>
+                <div class="icon-gender-container">
+                    <img src="https://www.mashedinplastic.co.uk/wp-content/uploads/2022/05/cropped-Music-Audio-Wave-icon-1.png" alt="gender-icon">
+                </div>
+            </div>
+            <div class="image-gender-container">
+                <img src="https://es.rollingstone.com/wp-content/uploads/2022/03/2-TheStrokes-Nacho-Arnedo-190322.jpg" alt="gender-image">
+            </div>
+        </div>
+        <div class="gender-card">
+            <div class="info-gender-card">
+                <h1>Indie Rock</h1>
+                <div class="icon-gender-container">
+                    <img src="https://www.mashedinplastic.co.uk/wp-content/uploads/2022/05/cropped-Music-Audio-Wave-icon-1.png" alt="gender-icon">
+                </div>
+            </div>
+            <div class="image-gender-container">
+                <img src="https://es.rollingstone.com/wp-content/uploads/2022/03/2-TheStrokes-Nacho-Arnedo-190322.jpg" alt="gender-image">
             </div>
         </div>
     </div>
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#ambienceCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#ambienceCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-    </button>
-</div>
-
-
-<section class="container-fluid py-5 bg-dark text-light position-relative">
-    <div class="row justify-content-center align-items-center position-relative">
-        <!-- Imagen 1 -->
-        <div class="col-md-6 text-center">
-            <img src="IMG/bar-image1.jpg" alt="Bar moderno" class="img-fluid featured-img featured-img-1">
+    <div class="cards-container">
+        <div class="card">
+            <div class="card-image-container">
+                <img src="https://i.scdn.co/image/ab6761610000e5eb7da39dea0a72f581535fb11f" alt="band-image">
+            </div>
+            <div class="card-info">
+                <h1>Band</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae in molestiae dolorum eveniet velit magnam sint beatae pariatur iste esse adipisci consectetur quod veritatis, rerum ipsum temporibus at tempora quas!</p>
+            </div>
+            <button>Mostrar más</button>
         </div>
-        <!-- Imagen 2 -->
-        <div class="col-md-6 text-center">
-            <img src="IMG/bar-image2.jpg" alt="Bar elegante" class="img-fluid featured-img featured-img-2">
+        <div class="card">
+            <div class="card-image-container">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebc3b137793230f4043feb0089" alt="band-image">
+            </div>
+            <div class="card-info">
+                <h1>Band</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae in molestiae dolorum eveniet velit magnam sint beatae pariatur iste esse adipisci consectetur quod veritatis, rerum ipsum temporibus at tempora quas!</p>
+            </div>
+            <button>Mostrar más</button>
         </div>
-        <!-- Cuadro de Texto -->
-        <div class="text-overlay text-center position-absolute">
-            <h2 class="fw-bold text-uppercase mb-3">Experiencia Única</h2>
-            <p>
-                En The Golden Sip, nos enorgullece ofrecerte una carta de cócteles de autor que combinan creatividad y
-                excelencia. Nuestros expertos bartenders, con años de experiencia en la industria, utilizan solo los
-                ingredientes más selectos y frescos para crear bebidas únicas que deleitarán tus sentidos.
-            </p>
+        <div class="card">
+            <div class="card-image-container">
+                <img src="https://i.scdn.co/image/ab67616d0000b273ec6e9c13eeed14eedbd5f7c9" alt="band-image">
+            </div>
+            <div class="card-info">
+                <h1>Band</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae in molestiae dolorum eveniet velit magnam sint beatae pariatur iste esse adipisci consectetur quod veritatis, rerum ipsum temporibus at tempora quas!</p>
+            </div>
+            <button>Mostrar más</button>
+        </div>
+        <div class="card">
+            <div class="card-image-container">
+                <img src="https://i.scdn.co/image/ab676161000051746935b20edca64719e20b17cd" alt="band-image">
+            </div>
+            <div class="card-info">
+                <h1>Band</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae in molestiae dolorum eveniet velit magnam sint beatae pariatur iste esse adipisci consectetur quod veritatis, rerum ipsum temporibus at tempora quas!</p>
+            </div>
+            <button>Mostrar más</button>
+        </div>
+        <div class="card">
+            <div class="card-image-container">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebc4b9cd69cf77ce41487dd69a" alt="band-image">
+            </div>
+            <div class="card-info">
+                <h1>Band</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae in molestiae dolorum eveniet velit magnam sint beatae pariatur iste esse adipisci consectetur quod veritatis, rerum ipsum temporibus at tempora quas!</p>
+            </div>
+            <button>Mostrar más</button>
+        </div>
+        <div class="card">
+            <div class="card-image-container">
+                <img src="https://m.media-amazon.com/images/I/51mb9JZqLUL._UF1000,1000_QL80_.jpg" alt="band-image">
+            </div>
+            <div class="card-info">
+                <h1>Band</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae in molestiae dolorum eveniet velit magnam sint beatae pariatur iste esse adipisci consectetur quod veritatis, rerum ipsum temporibus at tempora quas!</p>
+            </div>
+            <button>Mostrar más</button>
         </div>
     </div>
-</section>
-
-
-
-    <footer class="container-fluid text-center py-3 bg-dark border-top border-light">
-        <p>&copy; 2024 The Golden Sip - Todos los derechos reservados.</p>
-        <div class="mt-2">
-            <a href="#" class="text-light me-3">Facebook</a>
-            <a href="#" class="text-light me-3">Instagram</a>
-            <a href="#" class="text-light">Contacto</a>
+    <footer>
+        <div class="footer-logo-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/6000/6000250.png" alt="logo-image">
         </div>
+        <ul class="links-containers">
+            <li>Ayuda</li>
+            <li>Terminos y condiciones</li>
+            <li>Sobre nosotros</li>
+            <li>Aviso de privacidad</li>
+        </ul>
+        <ul class="logos-container">
+            <a href="#"><li><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github-logo"></li></a>
+            <a href="#"><li><img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="linkedin-logo"></li></a>
+        </ul>
     </footer>
-    
 </body>
-
 </html>
